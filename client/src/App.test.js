@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import App from './App';
 
 import { Display } from './components/Display'
+import { Navbar } from './components/Navbar'
 import { render } from '@testing-library/react';
 
 /*
@@ -25,6 +26,15 @@ test('The Title Rendered', () => {
 test('The map out box is here', () => {
   const { getByTestId } = render(<App />);
   getByTestId(/boxforapidate/i);
+});
+
+test('Navbar toggle renders', () => {
+  render(<Navbar />);
+});
+
+test('Toggle is rendered', () => {
+  const { getByTestId } = render(<App />);
+  getByTestId(/navbar-toggle-loads/i);
 });
 
 /*

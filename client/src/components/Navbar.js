@@ -9,7 +9,7 @@ export const Navbar = () => {
     setStyleMode(!styleMode);
   };
   return (
-    <nav className="navbar">
+    <nav data-testid="navbar-toggle-loads" className="navbar">
       <h1
         onClick={toggleMode}
         className={styleMode ? 'toggle toggled' : 'toggle'}
