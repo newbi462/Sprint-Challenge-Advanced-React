@@ -1,8 +1,9 @@
 import React from 'react';
 
-
 import logo from './logo.svg';
 import './App.css';
+
+import { Display } from './components/Display'
 
 //function App() {
 class App extends React.Component {
@@ -31,7 +32,7 @@ class App extends React.Component {
 
       <div className="App">
         <header className="App-header">
-          //
+          <Display stateProps={this.state} />
         </header>
       </div>
       </>
