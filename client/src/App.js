@@ -32,7 +32,11 @@ class App extends React.Component {
 
       <div className="App">
         <header className="App-header">
-          <Display stateProps={this.state} />
+          <h1 data-testid="main-title">Women's World Cup Data</h1>
+
+          <div data-testid="boxforapiDate">
+            <Display stateProps={this.state} />
+          </div>
         </header>
       </div>
       </>

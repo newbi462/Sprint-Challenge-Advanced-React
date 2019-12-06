@@ -7,7 +7,7 @@ export const Display = (props) => {
         return (
           <>
           <div className="data-card">
-            <h2>{item.name}</h2>
+            <h2 data-testid="names-are-here">{item.name}</h2>
             <span>Country: {item.country}</span>
             <span>Searches: {item.searches}</span>
           </div>
