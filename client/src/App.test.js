@@ -35,3 +35,4 @@ test('Names are maped to app', () => {
 });
 */
 //CAN NOT BE DONE AS A UNIT TEST IS AN INGRATION TEST DUE TO FETCH
+// due to time and needing to do hook could not get to this honestly would be nice if we coved some INGRATION testing prior to this sprint

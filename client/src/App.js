@@ -1,9 +1,10 @@
 import React from 'react';
 
 import logo from './logo.svg';
-import './App.css';
+import './App.scss';
 
 import { Display } from './components/Display'
+import { Navbar } from './components/Navbar'
 
 //function App() {
 class App extends React.Component {
@@ -29,12 +30,12 @@ class App extends React.Component {
       <>
       {}
       {console.log(this.state.fetchmeData)}
-
       <div className="App">
         <header className="App-header">
+          <Navbar />
           <h1 data-testid="main-title">Women's World Cup Data</h1>
 
-          <div data-testid="boxforapiDate">
+          <div className="flexbox" data-testid="boxforapiDate">
             <Display stateProps={this.state} />
           </div>
         </header>
